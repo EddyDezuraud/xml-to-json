@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #78f7bc;
+    --primary--action-color: #9af8cc;
+    --text-color: #dafbee;
+    --bg-color: #03231b;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+body:after{
+	position: fixed;
+	content: '';
+	z-index: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+    background: linear-gradient(0deg, #FFFFFF05, #FFFFFF00);
+    pointer-events: none;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.global {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.heading {
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 116px;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.labelled {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.labelled svg {
+    vertical-align: middle;
+    width: 16px;
+}
+
+
+.home-sct {
+    text-align: center;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 45px;
+    margin: 40px 0;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.button:hover {
+    background-color: var(--primary--action-color);
+}
+
+.button > * {
+    cursor: pointer;
+}
+
+.button input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.button svg {
+    width: 24px;
+}

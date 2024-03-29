@@ -56,8 +56,8 @@ window.handleFile = function() {
                 variables.variable.forEach(variable => {
                     const key = variable.$.key;
                     const type = variable.$.type;
-                    const description = variable.description[0];
-                    const value = variable.value[0]['_'];
+                    const description = variable.description ? variable.description[0] : null;
+                    const value = variable.value ? variable.value[0]['_'] : null;
 
                     const groupName = type === 'group' && !/^Parameter|^Variable/.test(key) ? key : parent;
 

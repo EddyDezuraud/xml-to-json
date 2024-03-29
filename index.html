@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uploader un fichier XML</title>
+    <title>XLM to XLSX free online converter</title>
+    <meta name="description" content="Convert your XML files to XLSX files for free.">
+    <meta name="keywords" content="XML, XLSX, converter, free, online">
+    <meta name="author" content="Eddy Dezuraud">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="en">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-<input type="file" id="fileInput" accept=".xml">
-<button onclick="handleFile()">Export XLSX</button>
+
+    <section class="home-sct global">
+        <h1 class="title">
+            <span class="text-primary">XML to XLSX</span>
+            <br/>online converter</h1>
+        <label class="button" for="file">
+            <input type="file" id="fileInput" accept=".xml" onchange="handleFile()">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                <path d="M12 11v6" />
+                <path d="M9.5 13.5l2.5 -2.5l2.5 2.5" />
+              </svg>
+            <span>Choose a file</span>
+        </label>
+    </section>
 
 <script src="dist/bundle.js"></script>
 </body>

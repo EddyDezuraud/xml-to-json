@@ -1,9 +1,10 @@
 {
-  "name": "xml-to-json",
+  "name": "xml-to-xlsx",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
+    "start": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
