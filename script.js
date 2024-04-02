@@ -81,12 +81,13 @@ window.handleFile = function() {
                 return extractedVariables;
             }
 
-            const extractedData = extractVariables(result.scope.variable[0], '');
 
-            console.log(extractedData);
-
-            // Afficher l'objet JSON
-            exportToExcel(extractedData);
+            if (result && result.scope && result.scope.variable) {
+                const extractedData = extractVariables(result.scope.variable[0], '');
+                exportToExcel(extractedData);
+            } else {
+                console.error('Unable to extract data: result, scope, or variable is undefined');
+            }
         });
     };
 
