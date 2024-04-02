@@ -33,6 +33,10 @@ module.exports = {
                     from: path.resolve(__dirname, "index.html"),
                     to: path.resolve(__dirname, "public"),
                 },
+                {
+                    from: path.resolve(__dirname, "style.css"),
+                    to: path.resolve(__dirname, "public"),
+                }
             ],
         }),
     ]
